@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Cactus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F4E3;
+            color: #2A5548;
+        }
+        header {
+            background-color: #3D7B5E;
+            color: #F8F4E3;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        nav {
+            background-color: #2A5548;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #F8F4E3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .intro, .features, .gallery, .ar-image {
+            margin-top: 2rem;
+        }
+        .features {
+            background-color: #C2B280;
+            padding: 2rem 0;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .feature-card {
+            background-color: #F2E8C9;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+        }
+        .feature-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .gallery-item {
+            text-align: center;
+        }
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .gallery-title {
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+        .ar-image {
+            text-align: center;
+        }
+        .ar-image img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+        }
+        footer {
+            background-color: #2A5548;
+            color: #F8F4E3;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌵 Mundo Cactus</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#galeria-cactus">Galería de Cactus</a></li>
+            <li><a href="#imagen-ra">Imagen RA</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro container">
+            <h2>Descubre el fascinante mundo de los cactus</h2>
+            <p>Los cactus son plantas increíblemente adaptables y hermosas, perfectas para decorar tu hogar o jardín con un toque de la naturaleza desértica.</p>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Características de los Cactus</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#3D7B5E" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <h3>Resistentes al sol</h3>
+                        <p>Los cactus están adaptados para sobrevivir en condiciones de luz solar intensa y calor extremo.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#3D7B5E" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <h3>Bajo consumo de agua</h3>
+                        <p>Estas plantas son expertas en conservar agua, lo que las hace ideales para jardines de bajo mantenimiento.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#3D7B5E" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            <path d="M12 22v-5"/>
+                            <path d="M7 17l5-2.5"/>
+                            <path d="M17 17l-5-2.5"/>
+                        </svg>
+                        <h3>Diversidad de formas</h3>
+                        <p>Desde pequeñas bolas hasta columnas gigantes, los cactus vienen en una asombrosa variedad de formas y tamaños.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria-cactus" class="gallery container">
+            <h2>Galería de Cactus</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="C:\Users\danie\OneDrive\Escritorio\Nueva carpeta/images (2).jpeg" alt="Cactus columnares" class="gallery-image">
+                    <p class="gallery-title">Cactus columnares</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\danie\OneDrive\Escritorio\Nueva carpeta/images (1).jpeg" alt="Cactus globares" class="gallery-image">
+                    <p class="gallery-title">Cactus globares</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\danie\OneDrive\Escritorio\Nueva carpeta/images.jpeg" alt="Cactus de pincel" class="gallery-image">
+                    <p class="gallery-title">Cactus de pincel</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="imagen-ra" class="ar-image container">
+            <h2>Imagen RA</h2>
+            <img src="C:\Users\danie\OneDrive\Escritorio\Nueva carpeta/Expocicion.png" alt="Imagen RA de cactus" width="400" height="300">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mundo Cactus. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
